@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Host History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/qrcode.min.js"></script>
+    <script src='index.js'></script>
+</head>
+
+<body>
+	<h3 id="hostName"></h3>
+    <hr/>
+	<div class="filters">
+		<ul class="flex-container wrap">
+			<li class=" first-item flex-item">
+				<section id='flip-host' class='container host'>
+					<div id='card'>
+						<button class='front' title='Host'>
+							<span title='Host'>Host only</span>
+						</button>
+						<button class='back' title='All'>
+							<span title='All'>All</span>
+						</button>
+					</div>
+				</section>
+			</li>
+			<li class="flex-item">
+				<section id='flip' class='container days'>
+					<div id='card'>
+						<div class='front'>
+							Last <input id="daysFilter" class="days-input" type="number" value="7"> Days
+						</div>
+					</div>
+				</section>
+			</li>
+			<li class="flex-item">
+				<section id='flip-rel' class='container relevant'>
+					<div id='card-relevency'>
+						<button class='front' title="relevant">
+							<span>Most Relevant</span>
+						</button>
+						<button class='back' title="recent">
+							<span>Most Recent</span>
+						</button>
+					</div>
+				</section>
+			</li>
+		</ul>
+	</div>
+	<hr/>
+	<div id="container"></div>
+	<div class="mask" role="dialog"></div>
+		<div class="custommodal" role="alert">
+		<div id="modalHeader" class="modal-header"></div>
+		<button class="close-modal" role="button">X</button>
+		<div id="qrcode"></div>
+	</div>
+</body>
+
+</html>

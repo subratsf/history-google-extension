@@ -1,0 +1,25 @@
+{
+    "name": "Connected History",
+    "description": "Check your history for current website!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["tabs", "history", "bookmarks", "storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "/images/history-icon-16.png",
+            "32": "/images/history-icon-32.png",
+            "48": "/images/history-icon-48.png",
+            "128": "/images/history-icon-128.png"
+          }
+    },
+    "icons": {
+        "16": "/images/history-icon-16.png",
+        "32": "/images/history-icon-32.png",
+        "48": "/images/history-icon-48.png",
+        "128": "/images/history-icon-128.png"
+    }
+}
